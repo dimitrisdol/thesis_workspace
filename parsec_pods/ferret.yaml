@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ferret-pod
+  labels:
+    greedy: catA
+spec:
+  containers:
+  - image: spirals/parsec-3.0
+    command: ["/bin/bash"]
+    args: ["-c", "./run -a run -p ferret -i simsmall -n 4 -S parsec"]
+    name: parsec-ctn
+  restartPolicy: "Never"
+

@@ -1,0 +1,34 @@
+Times of execution from 6 Parsec benchmark suites used.
+
+Input used is simsmall and Threads used are 4.
+Time referenced is real time.
+
+Each benchmark suite was run as a single pod alone on an empty node.
+
+ferret time: 0.143 s
+blackscholes time: 0.047 s
+canneal time: 1.084 s
+raytrace time: 5.113 s
+vips time: 0.242 s
+x264 time: 0.441 s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

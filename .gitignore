@@ -1,0 +1,8 @@
+spec-docker/SPEC_bench/
+ssh/
+greedyScheduler/
+greedyquadScheduler/
+randomScheduler/
+randomquadScheduler/
+resoScheduler/
+socketquadScheduler/

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vips-pod
+  labels:
+    greedy: catA
+spec:
+  containers:
+  - image: spirals/parsec-3.0
+    command: ["/bin/bash"]
+    args: ["-c", "./run -a run -p vips -i simsmall -n 4 -S parsec"]
+    name: parsec-ctn
+  restartPolicy: "Never"
+

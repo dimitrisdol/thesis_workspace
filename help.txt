@@ -1,0 +1,66 @@
+cant start kind cluter-docker error: 
+					sudo chmod 666 /var/run/docker.sock
+acti build info:
+			docker tag jmmisd/actischeduler01:0.0.1 \
+			localhost:5000/actischedulertest01:0.0.1
+			docker push localhost:5000/actischedulertest01:0.0.1
+			The push refers to repository [localhost:5000/actischedulertest01]
+			Get http://localhost:5000/v2/: dial tcp 127.0.0.1:5000: connect: 				connection refused
+			
+docker correct push: 	docker push jmmisd/greedtschedulertest01:0.0.1
+			
+dns and restart:
+			sudo nano /etc/resolv.conf
+
+			Set the nameserver to 8.8.8.8.
+
+			Restart the docker demon.
+
+			sudo systemctl restart docker
+			
+docker image:
+			The push refers to repository [docker.io/jmmisd/actischeduler01]
+			
+kind create cluster: 	
+			./kind create cluster --config kind-3-node.yaml
+
+
+create secret for docker: 
+				kubectl create secret generic regcred     --from-file=.dockerconfigjson=/home/jim/.docker/config.json     --type=kubernetes.io/dockerconfigjson
+				
+DEBUG LOCALHOST:5000 FOR DOCKER: 
+					docker service create --name registry --publish published=5000,target=5000,mode=host registry:2
+					
+github token:				 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
+
+ssh to termi7 :			ssh -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jimdolog@termi7.cslab.ece.ntua.gr
+
+transfer file to termi7:		scp -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa /home/jim/Desktop/Diplomatiki/greedyScheduler/demo/kube-scheduler.yml jimdolog@termi7.cslab.ece.ntua.gr:~/transfer
+
+copy file to container:		docker cp /home/jim/Desktop/Diplomatiki/kube-scheduler.yml 3ca188cdebf1:/etc/kubernetes/manifests
+
+copy docker image to tar:		docker export d0a21e14b979  -o foo.tar
+
+untar a tar file:			tar -xf foo.tar ~/test
+
+make a private key readable: 		sudo chmod 600 /ssh/id_rsa
+
+ssh to scirouter:			ssh -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jdologl@scirouter.cslab.ece.ntua.gr
+
+copy spec benchamrks tar from scirouter: 	scp -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jdologl@scirouter.cslab.ece.ntua.gr:~/spec2006.tar.gz /home/jim/Desktop/Diplomatiki
+
+create spec bench environment: 	 source ./shrc
+
+failed examples of spec build: 	runspec --config=Example-linux-ia64-icc91.cfg --size=test --tune=base        --noreportable --iterations=1 bzip2
+
+					runspec --config=Example-linux-ia64-icc91.cfg --size=test --tune=base \
+       --noreportable --iterations=1 bzip2
+       
+working spec test:       		runspec --config=cslab-spec-static.cfg --size=ref \
+        --noreportable --iterations=1 bzip2
+
+build docker image:			docker build -t jmmisd/testspec:1.0.0 .
+
+run docker image it bash:		docker run -it  jmmisd/testspec:1.0.0 /bin/bash
+
+git change branch to main:		git checkout -b main
