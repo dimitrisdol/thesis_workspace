@@ -51,16 +51,20 @@ copy spec benchamrks tar from scirouter: 	scp -i /home/jim/Desktop/Diplomatiki/s
 
 create spec bench environment: 	 source ./shrc
 
-failed examples of spec build: 	runspec --config=Example-linux-ia64-icc91.cfg --size=test --tune=base        --noreportable --iterations=1 bzip2
-
-					runspec --config=Example-linux-ia64-icc91.cfg --size=test --tune=base \
-       --noreportable --iterations=1 bzip2
        
 working spec test:       		runspec --config=cslab-spec-static.cfg --size=ref \
         --noreportable --iterations=1 bzip2
+        
+check inside of docker image:		docker exec -it <container_id> bash
 
 build docker image:			docker build -t jmmisd/testspec:1.0.0 .
 
 run docker image it bash:		docker run -it  jmmisd/testspec:1.0.0 /bin/bash
 
 git change branch to main:		git checkout -b main
+
+exec into pod:				kubectl exec --stdin --tty spec-pod -- /bin/bash
+
+exec into container of pod:		kubectl exec --stdin --tty spec-pod -c spec-ctn1 -- /bin/bash
+
+
