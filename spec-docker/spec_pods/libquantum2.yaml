@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: linquantum2
+  labels:
+    greedy: catC
+spec:
+  containers:
+  - image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 9999999999999999"]
+    name: spec-ctn1
+  - image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 9999999999999999"]
+    name: spec-ctn2
+  restartPolicy: "Never"

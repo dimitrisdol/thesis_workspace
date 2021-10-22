@@ -49,11 +49,11 @@ ssh to scirouter:			ssh -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jdologl@scir
 
 copy spec benchamrks tar from scirouter: 	scp -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jdologl@scirouter.cslab.ece.ntua.gr:~/spec2006.tar.gz /home/jim/Desktop/Diplomatiki
 
-create spec bench environment: 	 source ./shrc
+create spec bench environment: 	 source shrc
 
        
 working spec test:       		runspec --config=cslab-spec-static.cfg --size=ref \
-        --noreportable --iterations=1 bzip2
+        --noreportable --iterations=3 soplex
         
 check inside of docker image:		docker exec -it <container_id> bash
 
@@ -65,6 +65,7 @@ git change branch to main:		git checkout -b main
 
 exec into pod:				kubectl exec --stdin --tty spec-pod -- /bin/bash
 
-exec into container of pod:		kubectl exec --stdin --tty spec-pod -c spec-ctn1 -- /bin/bash
+exec into container of pod:		kubectl exec --stdin --tty libquantum2 -c spec-ctn1 -- /bin/bash
+
 
 

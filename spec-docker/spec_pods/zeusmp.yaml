@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: spec-pod
+  name: zeusmp
   labels:
     greedy: catA
 spec:
   containers:
   - image: jmmisd/testspec:1.0.0
     command: ["/bin/bash"]
-    args: ["-c" , " sleep 99999999999999999999 " ]
+    args: ["-c" , "sleep 9999999999999999"]
     name: spec-ctn
   restartPolicy: "Never"
