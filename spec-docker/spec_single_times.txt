@@ -2,138 +2,138 @@ Times of benchmarking
 Run with the cslab-spec-static.cfg, referenced size and 3 iterations for better results
 
 catA
-zeusmp: 
-namd: 
-gobmk: 
+zeusmp: 686 s
+namd: 531 s
+gobmk: 551 s
 ---
 catB
-omnetpp: 
-perlbench: 
-cactusADM: 
+omnetpp: 410 s
+perlbench: 442 s
+cactusADM: 1333 s
 ---
 catC
-libquantum2: 
-GemFDTD2: 
+libquantum2: 560 s
+GemFDTD2: 546 s
 ---
 CatD
-libquantum1: 
-soplex2: 
+libquantum1: 548 s
+soplex2: 323 s
 ---
 
 pairing: defender - attacker
 
 catA
 
-zeusmp: - namd:
-zeusmp: - gobmk:
-zeusmp: - omntepp:
-zeusmp: - perlbench:
-zeusmp: - cactusADM:
-zeusmp: - libquantum2:
-zeusmp: - GemsFDTD2:
-zeusmp: - libquantum1:
-zeusmp: - soplex2:
+zeusmp: 692 s - namd: 533 s
+zeusmp: 693 s - gobmk: 562 s
+zeusmp: 691 s - omntepp: 425 s
+zeusmp: 693 s - perlbench: 443 s
+zeusmp: 703 s - cactusADM: 1343 s
+zeusmp: 730 s - libquantum2: 666 s ?
+zeusmp: 715 s - GemsFDTD2: 610 s   ?
+zeusmp: 702 s - libquantum1: 553 s
+zeusmp: 706 s - soplex2: 357 s
 
-namd: - zeusmp:
-namd: - gobmk:
-namd: - omnetpp:
-namd: - perlbench:
-namd: - cactusADM:
-namd: - libquantum2:
-namd: - GemsFDTD2:
-namd: - libquantum1:
-namd: - soplex2:
+//namd: - zeusmp:
+namd: 527 s - gobmk: 568 s
+namd: 527 s - omnetpp: 427 s
+namd: 527 s - perlbench: 442 s
+namd: 524 s - cactusADM: 1338 s
+namd: 540 s - libquantum2: 618 s
+namd: 539 s - GemsFDTD2: 563 s
+namd: 525 s - libquantum1: 555 s
+namd: 533 s - soplex2: 327 s
 
-gobmk: - zeusmp:
-gobmk: - namd:
-gobmk: - omnetpp:
-gobmk: - perlbench:
-gobmk: - cactusADM:
-gobmk: - libquantum2:
-gobmk: - GemsFDTD2:
-gobmk: - libquantum1:
-gobmk: - soplex2:
+//gobmk: - zeusmp:
+//gobmk: - namd:
+gobmk: 565 s - omnetpp: 429 s
+gobmk: 557 s - perlbench: 442 s
+gobmk: 567 s - cactusADM: 1325 s
+gobmk: 584 s - libquantum2: 626 s
+gobmk: 588 s - GemsFDTD2: 554 s
+gobmk: 561 s - libquantum1: 555 s
+gobmk: 565 s - soplex2: 342 s
 
 ---
 
 catB
 
-omnetpp: - zeusmp:
-omnetpp: - namd:
-omnetpp: - gobmk:
-omnetpp: - perlbench:
-omnetpp: - cactusADM:
-omnetpp: - libquantum2:
-omnetpp: - GemsFDTD2:
-omnetpp: - libquantum1:
-omnetpp: - soplex2:
+//omnetpp: - zeusmp:
+//omnetpp: - namd:
+//omnetpp: - gobmk:
+omnetpp: 433 s - perlbench: 444 s
+omnetpp: 428 s - cactusADM: 1344 s
+omnetpp: 593 s - libquantum2: 599 s
+omnetpp: 509 s - GemsFDTD2: 584 s
+omnetpp: 429 s - libquantum1: 562 s
+omnetpp: 478 s - soplex2: 360 s
 
-perlbench: - zeusmp:
-perlbench: - namd:
-perlbench: - gobmk:
-perlbench: - omnetpp:
-perlbench: - cactusADM:
-perlbench: - libquantum2:
-perlbench: - GemsFDTD2:
-perlbench: - libquantum1:
-perlbench: - soplex2:
+//perlbench: - zeusmp:
+//perlbench: - namd:
+//perlbench: - gobmk:
+//perlbench: - omnetpp:
+perlbench: 437 s - cactusADM: 1335 s
+perlbench: 488 s - libquantum2: 601 s 
+perlbench: 478 s - GemsFDTD2: 562 s
+perlbench: 448 s - libquantum1: 562 s
+perlbench: 467 s - soplex2: 334 s
 
-cactusADM: - zeusmp:
-cactusADM: - namd:
-cactusADM: - gobmk:
-cactusADM: - omnetpp:
-cactusADM: - perlbench:
-cactusADM: - libquantum2:
-cactusADM: - GemsFDTD2:
-cactusADM: - libquantum1:
-cactusADM: - soplex2:
+//cactusADM: - zeusmp:
+//cactusADM: - namd:
+//cactusADM: - gobmk:
+//cactusADM: - omnetpp:
+//cactusADM: - perlbench:
+cactusADM: 1464 s - libquantum2: 647 s
+cactusADM: 1383 s - GemsFDTD2: 597 s
+cactusADM: 1403 s - libquantum1: 595 s
+cactusADM: 1390 s- soplex2: 342 s
 
 ---
 
 catC
 
-libquantum2: - zeusmp:
-libquantum2: - namd:
-libquantum2: - gobmk:
-libquantum2: - omnetpp:
-libquantum2: - perlbench:
-libquantum2: - cactusADM:
-libquantum2: - GemsFDTD2:
-libquantum2: - libquantum1:
-libquantum2: - soplex2:
+//libquantum2: - zeusmp:
+//libquantum2: - namd:
+//libquantum2: - gobmk:
+//libquantum2: - omnetpp:
+//libquantum2: - perlbench:
+//libquantum2: - cactusADM:
+libquantum2: 730 s - GemsFDTD2: 695 s
+libquantum2: 697 s - libquantum1: 689 s
+libquantum2: 647 s - soplex2: 462 s
 
-GemsFDTD2: - zeusmp:
-GemsFDTD2: - namd:
-GemsFDTD2: - gobmk:
-GemsFDTD2: - omnetpp:
-GemsFDTD2: - perlbench:
-GemsFDTD2: - cactusADM:
-GemsFDTD2: - libquantum2:
-GemsFDTD2: - libquantum1:
-GemsFDTD2: - soplex2:
+//GemsFDTD2: - zeusmp:
+//GemsFDTD2: - namd:
+//GemsFDTD2: - gobmk:
+//GemsFDTD2: - omnetpp:
+//GemsFDTD2: - perlbench:
+//GemsFDTD2: - cactusADM:
+//GemsFDTD2: - libquantum2:
+GemsFDTD2: 634 s - libquantum1: 689 s
+GemsFDTD2: 611 s - soplex2: 413 s
 
 ---
 
 catD
 
-libquantum1: - zeusmp:
-libquantum1: - namd:
-libquantum1: - gobmk:
-libquantum1: - omnetpp:
-libquantum1: - perlbench:
-libquantum1: - cactusADM:
-libquantum1: - libquantum2:
-libquantum1: - GemsFDTD2:
-libquantum1: - soplex2:
+//libquantum1: - zeusmp:
+//libquantum1: - namd:
+//libquantum1: - gobmk:
+//libquantum1: - omnetpp:
+//libquantum1: - perlbench:
+//libquantum1: - cactusADM:
+//libquantum1: - libquantum2:
+//libquantum1: - GemsFDTD2:
+libquantum1: 644 s - soplex2: 409 s
 
-soplex2: - zeusmp:
-soplex2: - namd:
-soplex2: - gobmk:
-soplex2: - omnetpp:
-soplex2: - perlbench:
-soplex2: - cactusADM
-soplex2: - libquantum2:
-soplex2: - GemsFDTD2:
-soplex2: - libquantum1:
+//soplex2: - zeusmp:
+//soplex2: - namd:
+//soplex2: - gobmk:
+//soplex2: - omnetpp:
+//soplex2: - perlbench:
+//soplex2: - cactusADM
+//soplex2: - libquantum2:
+//soplex2: - GemsFDTD2:
+//soplex2: - libquantum1:
 
 ---

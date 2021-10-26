@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: poda2
   labels:
-    greedy: catA
+    random: catA
 spec:
   schedulerName: default-scheduler
   containers:
