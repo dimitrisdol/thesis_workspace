@@ -22,7 +22,7 @@ docker image:
 			The push refers to repository [docker.io/jmmisd/actischeduler01]
 			
 kind create cluster: 	
-			./kind create cluster --config kind-3-node.yaml
+			./kind create cluster --config kind-4-node.yaml
 
 
 create secret for docker: 
