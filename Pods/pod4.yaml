@@ -4,6 +4,7 @@ metadata:
   name: podd3
   namespace: default
   labels:
+    category: catD
     greedy: catD
 spec:
   schedulerName: default-scheduler

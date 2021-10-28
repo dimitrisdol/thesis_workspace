@@ -32,7 +32,7 @@ metadata:
   name: poda2
   namespace: cpuman
   labels:
-    category: catA
+    categ: catA
     plugin: greedyquad
 spec:
   schedulerName: default-scheduler

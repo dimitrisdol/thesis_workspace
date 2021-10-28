@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: poda1
-  namespace: cpuman
+  name: podatest
+  namespace: default
   labels:
     category: catA
     plugin: random
 spec:
   schedulerName: default-scheduler
   containers:
-  - name: poda1
+  - name: podatest
     image: k8s.gcr.io/pause:3.2
