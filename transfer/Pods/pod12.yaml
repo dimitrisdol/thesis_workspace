@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: poda4
+  labels:
+    category: catA
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: poda4
+    image: k8s.gcr.io/pause:3.2

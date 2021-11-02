@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podb1
+  namespace: default
+  labels:
+    greedy: catB
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: podb1
+    image: k8s.gcr.io/pause:3.2

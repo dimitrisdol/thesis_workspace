@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podd5
+  namespace: default
+  labels:
+    greedy: catD
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: podd5
+    image: k8s.gcr.io/pause:3.2

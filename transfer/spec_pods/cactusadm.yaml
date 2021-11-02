@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cactusadm
+  labels:
+    category: catB
+spec:
+  containers:
+  - image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 9999999999999999"]
+    name: spec-ctn
+  restartPolicy: "Never"
