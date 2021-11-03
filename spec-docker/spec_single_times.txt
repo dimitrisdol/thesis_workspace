@@ -24,9 +24,9 @@ pairing: defender - attacker
 
 catA
 
-zeusmp: 692 s - namd: 533 s			1.0008
+zeusmp: 692 s - namd: 533 s			1.001
 zeusmp: 693 s - gobmk: 562 s			1.001
-zeusmp: 691 s - omntepp: 425 s		1.0007
+zeusmp: 691 s - omntepp: 425 s		1.001
 zeusmp: 693 s - perlbench: 443 s		1.001
 zeusmp: 703 s - cactusADM: 1343 s		1.024
 zeusmp: 730 s - libquantum2: 666 s ?		1.064
