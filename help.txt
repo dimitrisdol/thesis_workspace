@@ -47,7 +47,7 @@ make a private key readable: 		sudo chmod 600 /ssh/id_rsa
 
 ssh to scirouter:			ssh -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jdologl@scirouter.cslab.ece.ntua.gr
 
-copy spec benchamrks tar from scirouter: 	scp -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jdologl@scirouter.cslab.ece.ntua.gr:~/spec2006.tar.gz /home/jim/Desktop/Diplomatiki
+copy spec benchmarks tar from scirouter: 	scp -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jdologl@scirouter.cslab.ece.ntua.gr:~/spec2006.tar.gz /home/jim/Desktop/Diplomatiki
 
 create spec bench environment: 	 source shrc
 
