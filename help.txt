@@ -67,5 +67,6 @@ exec into pod:				kubectl exec --stdin --tty spec-pod -- /bin/bash
 
 exec into container of pod:		kubectl exec --stdin --tty libquantum2 -c spec-ctn1 -- /bin/bash
 
+better kubectl exec: 			kubectl exec namd-a4 -n mid-workload --stdin --tty -- /bin/bash
 
 
