@@ -13,7 +13,7 @@ cactusADM: 1333 s
 ---
 catC
 libquantum2: 560 s
-GemFDTD2: 546 s
+GemsFDTD2: 546 s
 ---
 CatD
 libquantum1: 548 s
