@@ -1,0 +1,45 @@
+apiVersion: kubescheduler.config.k8s.io/v1beta1
+kind: KubeSchedulerConfiguration
+leaderElection:
+  # (Optional) Change true to false if you are not running a HA control-plane.
+  leaderElect: true
+clientConnection:
+  kubeconfig: /etc/kubernetes/scheduler.conf
+profiles:
+- schedulerName: default-scheduler
+  plugins:
+    #queueSort:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    #  disabled:
+    #  - name: "*"
+    #preFilter:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    filter:
+      enabled:
+      - name: SparingQuadPlugin
+    #postFilter:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    #preScore:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    score:
+      enabled:
+      - name: SparingQuadPlugin
+    #reserve:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    #permit:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    #preBind:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    #bind:
+    #  enabled:
+    #  - name: SparingQuadPlugin
+    #postBind:
+    #  enabled:
+    #  - name: SparingQuadPlugin
