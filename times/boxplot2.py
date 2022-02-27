@@ -9,43 +9,43 @@ for slo in slo:
 
   if slo==1.1:
     data_random_low = [6,8,7,8,5,6.5,7.5,3,10]
-    data_greedy_low = [6,8,7,5,6,3,3,4.8]
-    data_socket_low = [3,5,3,1,3,5,4,2.1]
-    data_sparing_low = [4,5,5,3,5,2.8]
+    data_greedy_low = [5,7,7,5,6,3,3,4.8]
+    data_socket_low = [3,5,2,1,3,4,4,2.1]
+    data_sparing_low = [4,5,4,3,4,2.8]
     data_random_mid = [11,9,12,13,10,11.5,12.5,14.2]
-    data_greedy_mid = [10,9,11,9,10,8.8]
-    data_socket_mid = [9,7,8,7,10,8.8]
-    data_sparing_mid =[9,6,10,8,10,7.8]
+    data_greedy_mid = [8,7,11,9,10,8.8]
+    data_socket_mid = [6,4,8,7,10,8.8]
+    data_sparing_mid =[5,4,10,8,10,7.8]
     data_random_high = [15,13,16,16,14,15.5,15,13.2]
-    data_greedy_high = [10,11,12,9,13,14,10.1]
-    data_socket_high = [15,8,14,13,12,11.6,9,10.1]
-    data_sparing_high = [12,10,13,11,13,11.8]
+    data_greedy_high = [10,10,11,11,13,14,10.1]
+    data_socket_high = [11,8,9,11,12,11.6,9,10.1]
+    data_sparing_high = [9,8,10,11,13,11.8]
   elif slo==1.2:
     data_random_low = [2,2,3,4,2,2,4,3,5.2]
-    data_greedy_low = [1,2,0,2,0,0.8]
-    data_socket_low = [0,2,0,1,0,0.8]
-    data_sparing_low = [0,2,0,1,0,0.9,0.5]
+    data_greedy_low = [1,1,0,2,0,0.8]
+    data_socket_low = [0,1,0,1,0,0.8]
+    data_sparing_low = [0,1,0,1,0,0.9,0.5]
     data_random_mid = [5,5,6,7,8,6.5,7.5,10,9.5]
-    data_greedy_mid = [5,5,4,6,3.9,4.6]
-    data_socket_mid = [3,4,2,5,2,5.2]
-    data_sparing_mid = [4,2,3,5,3,4.8]
+    data_greedy_mid = [3,3,4,6,3.9,4.6]
+    data_socket_mid = [3,3,2,4,2,5.2]
+    data_sparing_mid = [4,2,3,2,2,4.8]
     data_random_high = [7,9,8,12,8,9,12,11,13,10.1]
-    data_greedy_high = [6,8,5,7,4,6,6.8]
-    data_socket_high = [6,7,5,7,4,6,5.8]
-    data_sparing_high = [6,8,5,7,4,6,6.3]
+    data_greedy_high = [5,7,5,7,4,6,6.8]
+    data_socket_high = [6,6,5,6,5,6,5.8]
+    data_sparing_high = [6,7,5,7,4,6,6.3]
   else:
     data_random_low = [1,2,2,0,1,2.5,3.5,3.8]
-    data_greedy_low = [0,1,0,1,0,1.2]
+    data_greedy_low = [0,0,0,1,0,1.2]
     data_socket_low = [0,0,0,1,0,1.2]
-    data_sparing_low = [0,2,0,1,0,1.27]
+    data_sparing_low = [0,0,0,1,0,1.27]
     data_random_mid = [3,2,4,5,2,4.5,7,6.8]
-    data_greedy_mid = [3.1,2,1,3,2,2.1]
-    data_socket_mid = [1,0,2,1,3,2.1]
-    data_sparing_mid = [3,2,2,3,1,2.1]
-    data_random_high = [4,6,5,8,7,8,9,7,8,5.3]
-    data_greedy_high = [3,4,3,4,5,5,2.8]
-    data_socket_high = [1,4,3,2,4,4,2.1]
-    data_sparing_high = [4,6,4,6,3,5,4.2]
+    data_greedy_mid = [3,1,1,3,2,2.1]
+    data_socket_mid = [1,0,1,1,3,2.1]
+    data_sparing_mid = [3,1,2,2.5,1,2.1]
+    data_random_high = [4,6,5,8,6,8,7,7,8,5.3]
+    data_greedy_high = [3,3,2,4,4,5,2.8]
+    data_socket_high = [1,2,3,4,3,4,1.1]
+    data_sparing_high = [2,4,3,5,3,5,4.2]
  
   data = [data_random_low, data_greedy_low, data_socket_low, data_sparing_low, data_random_mid, data_greedy_mid, data_socket_mid, data_sparing_mid , data_random_high, data_greedy_high, data_socket_high, data_sparing_high ]
  
@@ -103,7 +103,7 @@ for slo in slo:
   ax.set_xticklabels(['random', 'greedy', 'socket', 'sparing', 'random', 'greedy', 'socket', 'sparing' , 'random', 'greedy', 'socket', 'sparing'])
  
   # Adding title
-  plt.title("SLO=" + str(slo))
+  plt.title("SLO=" + str(slo) + " With CPU pinning")
  
   # Removing top axes and right axes
   # ticks
@@ -114,4 +114,4 @@ for slo in slo:
   ax.set_ylabel('Violations')
      
   # show plot
-  plt.savefig('slo' + str(slo) + '.jpg')
+  plt.savefig('slo-B-' + str(slo) + '.jpg')
