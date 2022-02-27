@@ -1,0 +1,36 @@
+node1: libquantum-d4 - soplex2-d2 - zeusmp-c1 - zeusmp-c3
+	4		6		3	3
+
+node2: gemsfdtd-d1 - omnetpp-b1 - perlbench-b4 - zeusmp-c2
+	4		6		5	3
+
+node3: cactusadm-a3 - libquantum2-d3 - namd-a1 - omnetpp-b3
+	3		7		7		9
+
+node4: gobmk-a2 - 	namd-a4 - 	namd-a5 -   perlbench-b2
+	3		3		3		5
+
+
+times node1:
+		libquantum-d4: 706/548			1.28 ~
+		soplex2-d2: 450/323 			1.39 ~
+		zeusmp-c1: 750/686			1.09
+		zeusmp-c3: 762/686			1.11
+
+times node2:
+		gemfsfdtd2-d1: 638/546			1.17
+		omnetpp-b1: 514/410			1.25 ~
+		perlbench-b4: 497/442			1.12
+		zeusmp-c2: 747/686 			1.09
+
+times node3:
+		cactusadm-a3: 1586/1333		1.19
+		libquantum-d3: 665/548			1.21 ~
+		namd-a1: 549/531			1.04
+		omnetpp-b3: 554/410 			1.35 ~
+
+times node4:
+		gobmk-a2:  562/ 551			1.02
+		namd-a4:  535/531			1.01
+		namd-a5: 535/531			1.01
+		perlbench-b2: 457/442			1.04

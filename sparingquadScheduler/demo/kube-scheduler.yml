@@ -14,7 +14,7 @@ spec:
     - --v=3
     - --authentication-kubeconfig=/etc/kubernetes/scheduler.conf
     - --authorization-kubeconfig=/etc/kubernetes/scheduler.conf
-    - --config=/etc/kubernetes/socketquad-config.yml
+    - --config=/etc/kubernetes/sparingquad-config.yml
     - --bind-address=127.0.0.1
     - --kubeconfig=/etc/kubernetes/scheduler.conf
     - --leader-elect=true

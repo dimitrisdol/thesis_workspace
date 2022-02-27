@@ -1,0 +1,284 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: namd-a1
+  namespace: mid-workload
+  labels:
+    category: catA
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: namd-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: omnetpp-b1
+  namespace: mid-workload
+  labels:
+    category: catB
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: omnetpp-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gobmk-a2
+  namespace: mid-workload
+  labels:
+    category: catA
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: gonmk-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zeusmp-c1
+  namespace: mid-workload
+  labels:
+    category: catC
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: zeusmp-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cactusadm-a3
+  namespace: mid-workload
+  labels:
+    category: catA
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: cactusadm-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gemsfdtd2-d1
+  namespace: mid-workload
+  labels:
+    category: catD
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: gemsfdtd2-ctn1
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  - name: gemsfdtd2-ctn2
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: perlbench-b2
+  namespace: mid-workload
+  labels:
+    category: catB
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: perlbench-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: soplex2-d2
+  namespace: mid-workload
+  labels:
+    category: catD
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: soplex2-ctn1
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  - name: soplex2-ctn2
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: omnetpp-b3
+  namespace: mid-workload
+  labels:
+    category: catB
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: omnetpp-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: namd-a4
+  namespace: mid-workload
+  labels:
+    category: catA
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: namd-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zeusmp-c2
+  namespace: mid-workload
+  labels:
+    category: catC
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: zeusmp-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zeusmp-c3
+  namespace: mid-workload
+  labels:
+    category: catC
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: zeusmp-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: libquantum2-d3
+  namespace: mid-workload
+  labels:
+    category: catD
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: libquantum-ctn1
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  - name: libquantum-ctn2
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 99999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: namd-a5
+  namespace: mid-workload
+  labels:
+    category: catC
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: namd-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: perlbench-b4
+  namespace: mid-workload
+  labels:
+    category: catB
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: perlbench-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: libquantum-d4
+  namespace: mid-workload
+  labels:
+    category: catD
+    plugin: greedyquad
+spec:
+  schedulerName: default-scheduler
+  containers:
+  - name: libquantum-ctn
+    image: jmmisd/testspec:1.0.0
+    command: ["/bin/bash"]
+    args: ["-c" , "sleep 999999999999999999"]
+  restartPolicy: "Never"
+---

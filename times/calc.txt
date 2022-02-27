@@ -2,21 +2,24 @@ low-workload:
 
 slo=1.1
 	
-	random: 6
-	greedy: 6
-	socket: 3
+	random: 6 | 8
+	greedy: 6 | 9
+	socket: 3 | 6
+	sparing:4 | 5
 	
 slo=1.2
 	
-	random: 2
-	greedy: 1
-	socket: 0
+	random: 2 | 2
+	greedy: 1 | 2
+	socket: 0 | 2
+	sparing:0 | 2
 	
 slo=1.3
 	
-	random: 1
-	greedy: 0
-	socket: 0
+	random: 1 | 2
+	greedy: 0 | 1
+	socket: 0 | 0
+	sparing:0 | 2
 	
 -------------------
 
@@ -24,21 +27,24 @@ mid-workload:
 
 slo=1.1
 	
-	random: 11
-	greedy: 10
-	socket: 9
+	random: 11 | 9
+	greedy: 10 | 9
+	socket: 9  | 7
+	sparing:9  | 6
 	
 slo=1.2
 	
-	random: 5
-	greedy: 5
-	socket: 3
+	random: 5  | 5
+	greedy: 5  | 5
+	socket: 3  | 4
+	sparing:4  | 2
 	
 slo=1.3
 	
-	random: 3
-	greedy: 5
-	socket: 1
+	random: 3  | 2
+	greedy: 5  | 2
+	socket: 1  | 0
+	sparing:3  | 2
 
 -------------------------
 	
@@ -46,18 +52,21 @@ high-workload:
 
 slo=1.1
 	
-	random: 15
-	greedy: 10
-	socket: 15
+	random: 15 | 13
+	greedy: 10 | 11
+	socket: 15 | 8
+	sparing:12 | 10
 	
 slo=1.2
 	
-	random: 7
-	greedy: 6
-	socket: 6
+	random: 7 | 9
+	greedy: 6 | 8
+	socket: 6 | 7
+	sparing:6 | 8
 	
 slo=1.3
 	
-	random: 4
-	greedy: 3
-	socket: 0
+	random: 4 | 6
+	greedy: 3 | 4
+	socket: 0 | 4
+	sparing:4 | 6

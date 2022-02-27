@@ -1,0 +1,35 @@
+node1:	omnetpp-b3	perlbench-b4	zeusmp-c1	zeusmp-c3	
+	6		5		3		3
+
+node2: gemsfdtd2-d1	namd-a1	namd-a6	zeusmp-c2
+	5		5		5		3
+
+node3: cactusadm-a3	gobmk-a2	soplex2-d2	zeusmp-c4
+	3		6		9		5
+
+node4: namd-a4		perlbench-b2	gobmk-a5	omnetpp-b1
+	3		4		3		5
+
+
+times node1: 	omnetpp-b3: 446/ 410 = 		1.09 
+		perlbench-b4: 457/ 442 = 		1.04
+		zeusmp-c1: 713/ 686 = 			1.04	
+		zeusmp-c3: 713/ 686 =			1.04
+
+times node2:	gemsfdtd2-d1: 637/ 546 =		1.18
+		namd-a1: 537/531 =			1.01
+		namd-a6: 531/531 =			1
+		zeusmp-c2: 763/ 686 =			1.12
+		
+times node3:	cactusadm-a3: 1438/ 1333 =		1.08
+		gobmk-a2: 583/ 551 =			1.06
+		soplex2-d2: 360/ 323 =			1.12
+		zeusmp-c4: 718/686 =			1.05
+		
+times node4:	namd-a4: 531/531 = 			1
+		perlbench-b2: 442/442 = 		1
+		gobmk-a5: 552/551			1.01
+		omnetpp-b1: 427/410 = 			1.04
+		
+
+

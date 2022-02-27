@@ -31,7 +31,7 @@ create secret for docker:
 DEBUG LOCALHOST:5000 FOR DOCKER: 
 					docker service create --name registry --publish published=5000,target=5000,mode=host registry:2
 					
-github token:				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
+github token:				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
 
 ssh to termi7 :			ssh -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jimdolog@termi7.cslab.ece.ntua.gr
 
@@ -53,7 +53,7 @@ create spec bench environment: 	 source shrc
 
        
 working spec test:       		runspec --config=cslab-spec-static.cfg --size=ref \
-        --noreportable --iterations=3 soplex
+        --noreportable --iterations=3 zeusmp
         
 check inside of docker image:		docker exec -it <container_id> bash
 
@@ -67,6 +67,6 @@ exec into pod:				kubectl exec --stdin --tty spec-pod -- /bin/bash
 
 exec into container of pod:		kubectl exec --stdin --tty libquantum2 -c spec-ctn1 -- /bin/bash
 
-better kubectl exec: 			kubectl exec namd-a4 -n mid-workload --stdin --tty -- /bin/bash
+better kubectl exec: 			kubectl exec namd-a4 -n cpuman --stdin --tty -- /bin/bash
 
 
