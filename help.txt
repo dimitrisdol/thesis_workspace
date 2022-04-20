@@ -31,7 +31,7 @@ create secret for docker:
 DEBUG LOCALHOST:5000 FOR DOCKER: 
 					docker service create --name registry --publish published=5000,target=5000,mode=host registry:2
 					
-github token:				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
+github token:				#################################
 
 ssh to termi7 :			ssh -i /home/jim/Desktop/Diplomatiki/ssh/id_rsa jimdolog@termi7.cslab.ece.ntua.gr
 
